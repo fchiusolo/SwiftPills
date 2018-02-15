@@ -12,7 +12,17 @@ class CardTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
     
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var containerView: UIView! {
+        didSet {
+            // Make it card-like
+            containerView.layer.cornerRadius = 10
+            containerView.layer.shadowOpacity = 1
+            containerView.layer.shadowRadius = 2
+            containerView.layer.shadowColor = UIColor(named: "Orange")?.cgColor
+            containerView.layer.shadowOffset = CGSize(width: 3, height: 3)
+            containerView.backgroundColor = UIColor(named: "Red")
+        }
+    }
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -33,19 +43,6 @@ class CardTableViewCell: UITableViewCell {
                 captainImage.isHidden = !footballer.isCaptain
             }
         }
-    }
-    
-    // MARK: - Lifecycle
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        // Make it card-like
-        containerView.layer.cornerRadius = 10
-        containerView.layer.shadowOpacity = 0.6
-        containerView.layer.shadowRadius = 2
-        containerView.layer.shadowColor = UIColor.black.cgColor
-        containerView.layer.shadowOffset = CGSize(width: 2, height: 2)
     }
     
 }

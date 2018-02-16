@@ -15,12 +15,19 @@ class CardTableViewCell: UITableViewCell {
     @IBOutlet weak var containerView: UIView! {
         didSet {
             // Make it card-like
-            containerView.layer.cornerRadius = 10
+            containerView.backgroundColor = UIColor.clear
             containerView.layer.shadowOpacity = 1
             containerView.layer.shadowRadius = 2
             containerView.layer.shadowColor = UIColor(named: "Orange")?.cgColor
             containerView.layer.shadowOffset = CGSize(width: 3, height: 3)
-            containerView.backgroundColor = UIColor(named: "Red")
+        }
+    }
+    
+    @IBOutlet weak var clippingView: UIView! {
+        didSet {
+            clippingView.layer.cornerRadius = 10
+            clippingView.backgroundColor = UIColor(named: "Red")
+            clippingView.layer.masksToBounds = true
         }
     }
     

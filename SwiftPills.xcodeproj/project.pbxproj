@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130200952041D40D0040F7EA /* RoundedViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130200942041D40D0040F7EA /* RoundedViews.storyboard */; };
+		130200972041D4310040F7EA /* ViewShadows.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130200962041D4310040F7EA /* ViewShadows.storyboard */; };
+		130200992041D4B80040F7EA /* TableViewWithCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130200982041D4B80040F7EA /* TableViewWithCards.storyboard */; };
 		134EF010202F374300CF4711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134EF00F202F374300CF4711 /* AppDelegate.swift */; };
 		134EF012202F374300CF4711 /* RoundedViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134EF011202F374300CF4711 /* RoundedViewsViewController.swift */; };
 		134EF015202F374300CF4711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134EF013202F374300CF4711 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		130200942041D40D0040F7EA /* RoundedViews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoundedViews.storyboard; sourceTree = "<group>"; };
+		130200962041D4310040F7EA /* ViewShadows.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewShadows.storyboard; sourceTree = "<group>"; };
+		130200982041D4B80040F7EA /* TableViewWithCards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewWithCards.storyboard; sourceTree = "<group>"; };
 		134EF00C202F374300CF4711 /* SwiftPills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134EF00F202F374300CF4711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		134EF011202F374300CF4711 /* RoundedViewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViewsViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1302008E2041D1F80040F7EA /* Rounded Views */ = {
+			isa = PBXGroup;
+			children = (
+				130200942041D40D0040F7EA /* RoundedViews.storyboard */,
+				134EF011202F374300CF4711 /* RoundedViewsViewController.swift */,
+			);
+			path = "Rounded Views";
+			sourceTree = "<group>";
+		};
+		1302008F2041D3990040F7EA /* View Shadows */ = {
+			isa = PBXGroup;
+			children = (
+				130200962041D4310040F7EA /* ViewShadows.storyboard */,
+				137B470C20320D1E00D00B47 /* ShadowsViewController.swift */,
+			);
+			path = "View Shadows";
+			sourceTree = "<group>";
+		};
+		130200902041D3A80040F7EA /* TableView with card style Cells */ = {
+			isa = PBXGroup;
+			children = (
+				130200982041D4B80040F7EA /* TableViewWithCards.storyboard */,
+				13D4EF6A20333D7500D58FBE /* CardsTableViewController.swift */,
+				13D4EF6D2033433900D58FBE /* CardTableViewCell.swift */,
+			);
+			path = "TableView with card style Cells";
+			sourceTree = "<group>";
+		};
+		130200912041D3AF0040F7EA /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				1302008E2041D1F80040F7EA /* Rounded Views */,
+				1302008F2041D3990040F7EA /* View Shadows */,
+				130200902041D3A80040F7EA /* TableView with card style Cells */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
 		134EF003202F374300CF4711 = {
 			isa = PBXGroup;
 			children = (
@@ -64,48 +108,21 @@
 			children = (
 				134EF00F202F374300CF4711 /* AppDelegate.swift */,
 				134EF01B202F374300CF4711 /* Info.plist */,
-				137B470920320C6400D00B47 /* Assets */,
-				137B470720320C5100D00B47 /* Controllers */,
-				13D4EF6C2033432000D58FBE /* UI */,
-				137B470820320C5700D00B47 /* Storyboards */,
+				130200912041D3AF0040F7EA /* Articles */,
+				137B470920320C6400D00B47 /* Resources */,
 			);
 			path = SwiftPills;
 			sourceTree = "<group>";
 		};
-		137B470720320C5100D00B47 /* Controllers */ = {
+		137B470920320C6400D00B47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				134EF011202F374300CF4711 /* RoundedViewsViewController.swift */,
-				137B470C20320D1E00D00B47 /* ShadowsViewController.swift */,
-				13D4EF6A20333D7500D58FBE /* CardsTableViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		137B470820320C5700D00B47 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				134EF013202F374300CF4711 /* Main.storyboard */,
 				134EF018202F374300CF4711 /* LaunchScreen.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		137B470920320C6400D00B47 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
+				134EF013202F374300CF4711 /* Main.storyboard */,
 				134EF016202F374300CF4711 /* Assets.xcassets */,
 				137B470A20320C8800D00B47 /* Colors.xcassets */,
 			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		13D4EF6C2033432000D58FBE /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				13D4EF6D2033433900D58FBE /* CardTableViewCell.swift */,
-			);
-			path = UI;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				134EF01A202F374300CF4711 /* LaunchScreen.storyboard in Resources */,
+				130200992041D4B80040F7EA /* TableViewWithCards.storyboard in Resources */,
+				130200952041D40D0040F7EA /* RoundedViews.storyboard in Resources */,
 				137B470B20320C8800D00B47 /* Colors.xcassets in Resources */,
+				130200972041D4310040F7EA /* ViewShadows.storyboard in Resources */,
 				134EF017202F374300CF4711 /* Assets.xcassets in Resources */,
 				134EF015202F374300CF4711 /* Main.storyboard in Resources */,
 			);

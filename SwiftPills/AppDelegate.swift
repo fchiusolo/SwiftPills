@@ -48,7 +48,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationBarAppearanceProxy = UINavigationBar.appearance()
         navigationBarAppearanceProxy.barTintColor = UIColor(named: "Red")
         navigationBarAppearanceProxy.tintColor = UIColor.white
-        navigationBarAppearanceProxy.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationBarAppearanceProxy.titleTextAttributes = [
+            NSAttributedStringKey.foregroundColor: UIColor.white,
+            NSAttributedStringKey.font: UIFont(name: "Lemon-Regular", size: UIFont.labelFontSize)
+        ]
+//        for family in UIFont.familyNames.sorted() {
+//            let names = UIFont.fontNames(forFamilyName: family)
+//            print("Family: \(family) Font names: \(names)")
+//        }
     }
 }
 

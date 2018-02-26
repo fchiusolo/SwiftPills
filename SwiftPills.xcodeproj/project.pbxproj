@@ -10,6 +10,8 @@
 		130200952041D40D0040F7EA /* RoundedViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130200942041D40D0040F7EA /* RoundedViews.storyboard */; };
 		130200972041D4310040F7EA /* ViewShadows.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130200962041D4310040F7EA /* ViewShadows.storyboard */; };
 		130200992041D4B80040F7EA /* TableViewWithCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130200982041D4B80040F7EA /* TableViewWithCards.storyboard */; };
+		1302009B2041D5A00040F7EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302009A2041D5A00040F7EA /* MainViewController.swift */; };
+		1302009D2041D5E00040F7EA /* Articles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1302009C2041D5E00040F7EA /* Articles.plist */; };
 		134EF010202F374300CF4711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134EF00F202F374300CF4711 /* AppDelegate.swift */; };
 		134EF012202F374300CF4711 /* RoundedViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134EF011202F374300CF4711 /* RoundedViewsViewController.swift */; };
 		134EF015202F374300CF4711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134EF013202F374300CF4711 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		130200942041D40D0040F7EA /* RoundedViews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoundedViews.storyboard; sourceTree = "<group>"; };
 		130200962041D4310040F7EA /* ViewShadows.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewShadows.storyboard; sourceTree = "<group>"; };
 		130200982041D4B80040F7EA /* TableViewWithCards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewWithCards.storyboard; sourceTree = "<group>"; };
+		1302009A2041D5A00040F7EA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1302009C2041D5E00040F7EA /* Articles.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Articles.plist; sourceTree = "<group>"; };
 		134EF00C202F374300CF4711 /* SwiftPills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		134EF00F202F374300CF4711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		134EF011202F374300CF4711 /* RoundedViewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViewsViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				134EF00F202F374300CF4711 /* AppDelegate.swift */,
+				1302009A2041D5A00040F7EA /* MainViewController.swift */,
 				134EF01B202F374300CF4711 /* Info.plist */,
 				130200912041D3AF0040F7EA /* Articles */,
 				137B470920320C6400D00B47 /* Resources */,
@@ -121,6 +126,7 @@
 				134EF013202F374300CF4711 /* Main.storyboard */,
 				134EF016202F374300CF4711 /* Assets.xcassets */,
 				137B470A20320C8800D00B47 /* Colors.xcassets */,
+				1302009C2041D5E00040F7EA /* Articles.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 				130200972041D4310040F7EA /* ViewShadows.storyboard in Resources */,
 				134EF017202F374300CF4711 /* Assets.xcassets in Resources */,
 				134EF015202F374300CF4711 /* Main.storyboard in Resources */,
+				1302009D2041D5E00040F7EA /* Articles.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +211,7 @@
 				13D4EF6E2033433900D58FBE /* CardTableViewCell.swift in Sources */,
 				134EF012202F374300CF4711 /* RoundedViewsViewController.swift in Sources */,
 				13D4EF6B20333D7500D58FBE /* CardsTableViewController.swift in Sources */,
+				1302009B2041D5A00040F7EA /* MainViewController.swift in Sources */,
 				134EF010202F374300CF4711 /* AppDelegate.swift in Sources */,
 				137B470D20320D1E00D00B47 /* ShadowsViewController.swift in Sources */,
 			);
